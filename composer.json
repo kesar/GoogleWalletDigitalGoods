@@ -1,0 +1,21 @@
+{
+    "name": "kesarito/googlewalletdigitalgoods",
+    "type": "library",
+    "description": "GoogleWalletDigitalGoods is a PHP library that helps you to use google wallet.",
+    "keywords": ["wallet", "goods", "google"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cesar Rodriguez"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "GoogleWalletDigitalGoods": "src/",
+            "GoogleWalletDigitalGoods\\PHPUnit": "test/"
+        }
+    }
+}
