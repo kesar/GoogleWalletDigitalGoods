@@ -10,7 +10,7 @@ composer.json file.  Composer will handle the autoloading.
 ```json
 {
     "require": {
-        "kesar/googlewalletdigitalgoods": ">=1.0.0"
+        "kesar/googlewalletdigitalgoods": "dev-master"
     }
 }
 ```
