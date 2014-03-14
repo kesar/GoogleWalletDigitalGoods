@@ -1,5 +1,5 @@
 {
-    "name": "kesarito/googlewalletdigitalgoods",
+    "name": "kesar/googlewalletdigitalgoods",
     "type": "library",
     "description": "GoogleWalletDigitalGoods is a PHP library that helps you to use google wallet.",
     "keywords": ["wallet", "goods", "google"],

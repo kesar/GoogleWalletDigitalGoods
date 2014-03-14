@@ -6,9 +6,6 @@ use \GoogleWalletDigitalGoods\JWT;
 
 require __DIR__ . '/../src/autoload.php';
 
-$sellerIdentifier = SellerInfo::$issuerId;
-$sellerSecretKey = SellerInfo::$secretKey;
-
 $payload = new Payload();
 $payload->SetIssuedAt(time());
 $payload->SetExpiration(time() + 3600);
@@ -25,7 +22,7 @@ $payload->AddProperty(
 );
 
 // Creating payload of the product.
-$Token = $payload->CreatePayload($sellerIdentifier);
+$Token = $payload->CreatePayload(SellerInfo::$issuerId);
 
 // Encoding payload into JWT format.
-$jwtToken = JWT::encode($Token, $sellerSecretKey);
+$jwtToken = JWT::encode($Token, SellerInfo::$secretKey);
